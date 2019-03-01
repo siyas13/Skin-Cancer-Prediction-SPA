@@ -2,5 +2,5 @@
 An application that predicts maligant and benign cancer
 
 # Steps to execute
-clone the repo
-npm start
+-clone the repo
+-npm start
