@@ -1,0 +1,144 @@
+#root {
+  height: 100%;
+  margin:0;
+  padding: 0;
+
+}
+
+html,body {
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+.App {
+  display: block;
+  text-align: center;
+  height: 100%;
+  min-height: calc(100vh - 70px);
+  background-color:#333;
+  overflow: hidden;
+}
+
+.file-div {
+  display: block;
+  text-align: center;
+  height: 100%;
+  width:100%;
+}
+
+.title {
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+  min-height: 960px;
+}
+.file {
+  margin-top: 10%;
+  margin-left: 25%;
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  text-align: center
+}
+
+[hidden] {
+  display: none !important;
+}
+.ModalButton{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAZlBMVEX///9MTEz4+Pj+/v75+fn8/Pz7+/tNTU2wsLCYmJhnZ2dWVlasrKzy8vKVlZWysrJdXV3r6+u+vr7n5+fT09OBgYGoqKhkZGSHh4dxcXFra2vMzMzo6Ojc3NzFxcVeXl6enp55eXmzBtNxAAAFLUlEQVRogb2aiXarIBCGFURSjVvMapq0ff+XvLJDRBiyXM+d3p5k5BP+YZmpWZZleP5nWxY0oJvtOv8ssowwK4WVRFjBDHPD3KSrcrNdbbelq/iWoIxbWQgrSmGIcMMIa7NdiwLkRjDDfIKBnRaDDPx6P6KMN4wVM6HShxiqVa3J5xjMbclA4Zuv1//AoPSaoEfB5wkukxioonRCSQyhSYoe25zmeZfCEOOVMj++65mR9wNsDhoGSYmrNudXm9QPowmIcZv7QZndgHHFTWsCYuA/yaB/JZjBWgTH1ex2z5ns/Lp/ioFOub5ODUwP1uLsQaCM7CjGKud2BDMKvjcC16uxpkr3mVMPQIYYL+iaeKayE+I6E8vNPz8MowTuUXtKc/uiN2g/LE0i/UB/1HSDd+kPxsBGk+j+sVN6GO130diVLUIZ6Ee0b18/6L2MOXw91y/sNEW4JnHGWPsg9Qhh8OMKZD8/O5rrADvDTjowxrznUrd9waN7IKOIn+HQxTdY7LogwEmH8FN37OzTrTHYThxlaE2CjKE3c+PR+iYQu64mQUb5685Bd97/ghhFjGGH76P28ydjjCE0CTOyw5Ih+8P/OxRhBuGaRBjXVT3k0n+P7hZRRjkt2s/d36cyyuAnlnVGtvHo4LLybWTXczTxMZp+fY6oq0ZBhqOJN/8YV/Tg3VCh/R1ZySMMku23m27Dret6w+g3m65jNn+1jzKUJpA8qjJDVMXnoGqRaZKBGciGJGV/CQzeE6lD9SlGVmkGrRIYy7JHKB+sTFxVcMay7BHMOSuznlRgRqnTXxAjczSBMoo0hqNJAgPzdA7IIDo/mYcLznDLHtEagDtPEtLslHqJA/kQQ2oiIE+VPSB1uBPVa28FZ5iyB6gmU5ljZAVmFCb9hTD4cMkYnsCMMoXBNdH7VJXAEJpAa2Qmj6cVnCHTOSCjcOcJgKGKA1A9pCb6HJTGKMEMpUkuNYEyMDTF5jeezLG7gpdWrBR73LTHm38O6hvVcPGlPswYj+32Wzy1Lnugjh3d6TH8cJbwU5BRHHn5pXPKHujq5P/LuBKPMplz3RR8HFlZmFNKowkiBznYEwkwRAlHPM45xMCTnLIHNl46nZNnw5w2AUZ5NSF8DQ0rUmt1r0sSrEc6mWpCwYJ1PnTGobgaVHjUisFWSWQgwYBsJOWAgvNjUD2puZtKsWsVnE046Mn9XJ0O92A/irJRK1zN3LQmtRJ0iNbhAHNQQeaeWJrgWgnaBCcvcN31aoJRrfKO5g0M1KjWLE3m3yxNojWy+HrVqNaMJuwGHV3DGxgeTfhN1jx5YazU2j6I2LI1YTcZyBsYyOrJoya50uQVzYnSRECQXfYw8+QNDKUJZZowt6UmrzF4EdDSRDCEJr38NN+/3g+M9jrb565Kk4uK7MvwOqMxrSG77NHqzfunbduvr4i12nxf94rB/sBmNCH3fOWiK78D3HO2tRlNCGInUJMXmLL8Sru+ypenwnMifGh1OrdTdbjHPy2slexoxJVdOyWdSn8Pj/WlwEPa3TUpy6Lrh1IzZMA0lTNGvgejy7Z8w6k+mwbJYGUPGZDjxef5/HX5VmFuUmyUoS9q62LjPGPlk89yp79qFbTSX/7J2Nbv0b1vR70jFS5j/gTddtvNZhOx8Nfdbl86iTtevFnwzP4RLsSnv1mQzjDp76trYoyR9GbBUwyc9maBf4+KMBLfLHiqHyLV4uNVCuNvjolk0n4ljCiTbvols3VXu8WHN+EsY18+mNd16bZ4v+4ficpm+4JGt24AAAAASUVORK5CYII=');
+}
+.Modal {
+  display: none !important;
+}
+.choose-file {
+  height: 34px;
+  border: none;
+  outline: none;
+  color: rgb(33, 37, 41);
+  padding-left: 10px;
+  font-size: 15px;
+
+}
+
+.upload {
+  background-color: white;
+}
+.UploadMain{
+  height: 10%;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.file-input {
+  border: none;
+    padding: 0;
+    height: 34px;
+    border-radius: 0;
+    margin-bottom: 3px;
+    position: relative;
+    /* display: flex; */
+    vertical-align: middle;
+    /* padding-top: 9px; */
+    padding: 10px;
+    padding-top: 7px;
+    margin-left: 0%;
+    background: #e9ecef;
+    /* width: 10%; */
+    color: black;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.uploadButton {
+
+  height: 34px;
+  outline: none;
+  border: none;
+  background: #e9ecef;
+  /* margin-bottom: 1px; */
+  bottom: 1px;
+  position: relative;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+
+.result {
+  background-color: orange;
+}
+.bg-2 {
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+  height: 100%;
+}
+.bg-3 {
+  background-color: #fff; /* White */
+  color: #555555;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  margin-bottom: 0px
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
