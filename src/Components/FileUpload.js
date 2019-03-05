@@ -1,11 +1,9 @@
 import React from 'react';
 export default (props) =>(
-<div className="file-div">
 <div className="UploadMain">
-    <label className="btn btn-default file-input">
+    <label className="btn btn-default browseBtn">
      Browse <input type="file" hidden onChange={props.load}/>
     </label>
-    <input className="choose-file" type="text" value={props.name || 'Choose File'} />
-    <button className="uploadButton" onClick={props.upload}>Upload</button>
-    </div>
+    <input className="input-file" type="text" value={props.name || 'Choose File'} />
+    <button className="btn btn-default uploadBtn" onClick={props.upload}>Upload</button>
 </div>);

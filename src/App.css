@@ -19,12 +19,6 @@ html,body {
   overflow: hidden;
 }
 
-.file-div {
-  display: block;
-  text-align: center;
-  height: 100%;
-  width:100%;
-}
 
 .title {
   background-color: blue;
@@ -53,77 +47,61 @@ html,body {
 .Modal {
   display: none !important;
 }
-.choose-file {
-  height: 34px;
-  border: none;
-  outline: none;
-  color: rgb(33, 37, 41);
-  padding-left: 10px;
-  font-size: 15px;
-
-}
 
 .upload {
   background-color: white;
 }
 .UploadMain{
-  height: 10%;
-  margin-top: 5%;
-  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1%;
+  /* height: 10%; */
+  margin-top: 3%;
+  /* width: 100%; */
+}
+  
+
+.input-file {
+  color: gray;
+  padding: 5px;
+  font-size: 12px;
 }
 
-.file-input {
+.uploadBtn, .uploadBtn:hover {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   border: none;
-    padding: 0;
-    height: 34px;
-    border-radius: 0;
-    margin-bottom: 3px;
-    position: relative;
-    /* display: flex; */
-    vertical-align: middle;
-    /* padding-top: 9px; */
-    padding: 10px;
-    padding-top: 7px;
-    margin-left: 0%;
-    background: #e9ecef;
-    /* width: 10%; */
-    color: black;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  color: #f4511e;
+  font-weight:500;
 }
-
-
-.uploadButton {
-
-  height: 34px;
-  outline: none;
+.uploadBtn:hover {
+  background-color: #f97147;
+  color: white;
+  transition: all .3s ease;
+}
+.browseBtn {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   border: none;
-  background: #e9ecef;
-  /* margin-bottom: 1px; */
-  bottom: 1px;
-  position: relative;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-
+  color: #f4511e;
+  font-weight:500;
 }
-
+.browseBtn:hover {
+  background-color: #f97147;
+  color: white;
+  transition: all .3s ease;
+}
 .result {
   background-color: orange;
 }
 .bg-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #474e5d; /* Dark Blue */
   color: #ffffff;
   height: 100%;
 }
-.bg-3 {
-  background-color: #fff; /* White */
-  color: #555555;
-}
-
 .App-link {
   color: #61dafb;
 }
