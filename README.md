@@ -5,3 +5,4 @@ An application that predicts maligant and benign cancer
 + clone the repo
 + npm start
 n
+f
