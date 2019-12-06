@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import FileUpload from './Components/FileUpload';
 import MasterPage from './Components/MasterPage';
-import MidSection from './Components/MidSection'
+import MidSection from './Components/MidSection';
+import Result from './Components/Result';
 import axios from 'axios';
 
 const endpoint = 'http://localhost:4000/images'
@@ -47,29 +48,15 @@ class App extends Component {
         this.setState({
           respond: true
         });
-        console.log("answer",answer);
-
-        console.log("answer",answer);
-
       });
   }
   render() {
-    console.log(",,,,,,,,,,,,,",answer);
     return (
       <div className="App">
-        <MasterPage>
-          {/* <div className="title">
-          <b>CANCER PREDICTION</b>
-        </div>
-        <div className="upload">
-          <FileUpload upload={this.handleUpload} load={this.handleselectedFile}/>
-        </div>
-        <div className="result">
-          RESULT: {this.state.respond && `${answer}`}
-        </div> */}
-        </MasterPage>
+        <MasterPage />
         <MidSection  upload={this.handleUpload} load={this.handleselectedFile}>
-        <FileUpload upload={this.handleUpload} name={this.state.selectedFileName} load={this.handleselectedFile}/>
+          <FileUpload upload={this.handleUpload} name={this.state.selectedFileName} load={this.handleselectedFile}/>
+
         </MidSection>
 
 

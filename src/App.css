@@ -16,7 +16,7 @@ html,body {
   height: 100%;
   min-height: calc(100vh - 70px);
   background-color:#333;
-  overflow: hidden;
+
 }
 
 
@@ -59,7 +59,7 @@ html,body {
   margin-top: 3%;
   /* width: 100%; */
 }
-  
+
 
 .input-file {
   color: gray;
@@ -86,6 +86,19 @@ html,body {
   color: #f4511e;
   font-weight:500;
 }
+
+@media only screen and (max-width: 960px) {
+  .blockQoute{
+    width:65%;
+    margin:2% auto;
+    padding:20px;
+  }
+}
+.blockQoute{
+  width:50%;
+  margin:2% auto;
+  padding:20px;
+}
 .browseBtn:hover {
   background-color: #f97147;
   color: white;
@@ -105,12 +118,18 @@ html,body {
 .App-link {
   color: #61dafb;
 }
+.hr{
+  width:100%;
+  min-height: 2.5px;
+  height: 1%;
+}
 
 .jumbotron {
   background-color: #f4511e;
   color: #fff;
   margin-bottom: 0px
 }
+
 
 @keyframes App-logo-spin {
   from {
